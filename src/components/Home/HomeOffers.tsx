@@ -38,7 +38,7 @@ export default function HomeOffers() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % offers.length);
+      setIndex((prev) => (prev + 1) % offers?.length);
       setFlipKey((prev) => prev + 1); // retriggers animation
     }, 3000);
 
