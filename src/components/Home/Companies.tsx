@@ -9,12 +9,12 @@ export default function Companies() {
       <h1
         data-aos="fade-up"
         data-aos-duration="500"
-        className="text-3xl text-center font-[200] text-[#438D98]  mt-40 mb-20"
+        className="text-3xl text-center text-[70px] font-semibold text-[#438D98]  mt-40 mb-20"
       >
         Our Partners
       </h1>
       <div className="flex m-auto w-[25%] pl-20 pr-20">
-        {companies.map((company, index) => (
+        {companies?.map((company, index) => (
           <Image
             key={index}
             src={company.imgSrc}

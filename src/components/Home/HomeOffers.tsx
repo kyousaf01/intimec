@@ -59,7 +59,7 @@ export default function HomeOffers() {
         <h1
           data-aos="fade-down-left"
           data-aos-duration="500"
-          className="text-[70px] lg:w-1/2 font-semibold text-[#438D98]"
+          className="text-[70px] lg:w-1/2 font-semibold text-[#438D98] mb-12"
         >
           Services
         </h1>
