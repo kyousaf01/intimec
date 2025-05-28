@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col bg-black text-white mt-12">
+    <div className="flex flex-col bg-black text-white mt-12 p-8">
       <div className="pr-12 pl-12 pt-4 pb-4">
         <Image
           src="/images/logo.png"
@@ -13,7 +13,6 @@ export default function Footer() {
           height={150}
           priority
         />
-        <hr className="border-t border-gray-300 mt-4" />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 pt-6 pb-6">
           <div className="flex flex-col">
             <h1 className="text-xl font-bold mb-4">About</h1>
