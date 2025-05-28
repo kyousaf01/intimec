@@ -1,0 +1,31 @@
+import Image from "next/image";
+import React from "react";
+
+export default function Companies() {
+  const companies = [{ imgSrc: "/images/microsoft.png" }];
+
+  return (
+    <div>
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="500"
+        className="text-3xl text-center font-[200] text-[#438D98]  mt-40 mb-20"
+      >
+        Our Partners
+      </h1>
+      <div className="flex m-auto w-[25%] pl-20 pr-20">
+        {companies.map((company, index) => (
+          <Image
+            key={index}
+            src={company.imgSrc}
+            alt={`Company logo ${index}`}
+            width={80}
+            height={80}
+            priority
+            className="w-full bg-sky-50 rounded-3xl"
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
