@@ -18,7 +18,7 @@ export default function HomeComponent() {
 
       {/* Content over video */}
       <div className="relative z-10 flex flex-col lg:ml-[5%] 2xl:mt-[10%] xl:mt-[5%] lg::mt-[5%] justify-center h-full text-white ">
-        <h1 className="text-[40px] max-md:text-[30px] tracking-tight font-[200] animate__animated animate__fadeIn animate__slow">
+        <h1 className="text-[40px] max-md:text-[30px] tracking-tight font-bold animate__animated animate__fadeIn animate__slow">
           Your trusted IAM
           Security Partner
         </h1>

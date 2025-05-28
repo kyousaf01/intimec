@@ -5,7 +5,6 @@ import React from "react";
 export default function Footer() {
   return (
     <div className="flex flex-col bg-black text-white mt-12">
-      <hr className="w-full border-t border-gray-300 my-8" />
       <div className="pr-12 pl-12 pt-4 pb-4">
         <Image
           src="/images/logo.png"
@@ -53,7 +52,6 @@ Intimec specializes in Identity and Access Management (IAM), empowering business
             </Link>
           </div>
         </div>
-        <hr className="border-t border-gray-300" />
         <p className="text-lg mt-4">
           intimec.com&copy;{new Date().getFullYear()} | All rights reserved |
         </p>
