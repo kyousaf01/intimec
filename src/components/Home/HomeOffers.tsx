@@ -74,7 +74,7 @@ export default function HomeOffers() {
         
       </div>
       <div className="flex flex-col lg:w-1/2">
-        {offers.map((offer, index) => (
+        {offers?.map((offer, index) => (
           <div
             key={index}
             className={`w-full ${

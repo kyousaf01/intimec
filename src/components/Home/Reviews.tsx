@@ -44,7 +44,7 @@ export default function Reviews() {
         </div>
       </div>
 
-      {reviews.map((review, index) => (
+      {reviews?.map((review, index) => (
         <div
           key={index}
           className={`bg-sky-50 rounded-2xl p-6 h-fit ${
@@ -73,7 +73,7 @@ export default function Reviews() {
           </div>
 
           <div className="mb-2 text-3xl font-semibold text-gray-800">
-            "{review.review}"
+            {review.review}
           </div>
 
           {/* Collapsible description */}
@@ -82,7 +82,7 @@ export default function Reviews() {
               expanded === index ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
-            <p className="text-gray-600 text-sm mb-4 mt-2 text-xl">{review.text}</p>
+            <p className="text-gray-600 mb-4 mt-2 text-xl">{review.text}</p>
           </div>
 
           <div className="text-gray-900 text-xl">- {review.name}</div>

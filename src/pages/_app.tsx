@@ -1,6 +1,5 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-import HeaderHome from "@/components/Home/HeaderHome";
 import "animate.css";
 import Aos from "aos";
 import { useEffect } from "react";

@@ -13,7 +13,7 @@ export default function ContactComponent() {
           </h1>
           <p className="text-xl font-[100] mt-8">
             Let us know where you are in your digital transformation journey and
-            we'll help you reach your destination.
+            we will help you reach your destination.
           </p>
         </div>
         <div className="lg:w-1/2 bg-sky-50 p-12 rounded-3xl max-sm:mt-12">

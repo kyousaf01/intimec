@@ -1,6 +1,5 @@
 import AboutComponent from "@/components/About/AboutComponent";
 import Team from "@/components/About/Team";
-import Reviews from "@/components/Home/Reviews";
 import Footer from "@/components/Shared/Footer";
 import Head from "next/head";
 import  ContactComponent  from '@/components/Contact/ContactComponent';

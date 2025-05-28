@@ -3,7 +3,6 @@ import Companies from "@/components/Home/Companies";
 import HomeAbout from "@/components/Home/HomeAbout";
 import HomeComponent from "@/components/Home/HomeComponent";
 import HomeOffers from "@/components/Home/HomeOffers";
-import Reviews from "@/components/Home/Reviews";
 import Footer from "@/components/Shared/Footer";
 import Head from "next/head";
 import  HeaderHome  from '@/components/Home/HeaderHome';
