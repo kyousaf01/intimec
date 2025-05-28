@@ -47,12 +47,12 @@ export default function HomeOffers() {
 
 
   return (
-    <div className="flex lg:justify-around mt-40">
-      <div>
+    <div className="flex max-md:flex-col lg:justify-around mt-40">
+      <div className="max-md:p-4">
         <h1
           data-aos="fade-down-left"
           data-aos-duration="500"
-          className="text-[70px] lg:w-1/2 font-semibold text-[#438D98]  mt-40 mb-2"
+          className="text-[70px]  lg:w-1/2 font-semibold text-[#438D98]  mt-40 mb-2"
         >
           Our
         </h1>
