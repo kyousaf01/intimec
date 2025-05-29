@@ -51,7 +51,7 @@ Intimec specializes in Identity and Access Management (IAM), empowering business
             </Link>
           </div>
         </div>
-        <p className="text-lg mt-4">
+        <p className="text-lg mt-4 flex justify-end">
           intimec.com&copy;{new Date().getFullYear()} | All rights reserved |
         </p>
       </div>

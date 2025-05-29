@@ -13,7 +13,7 @@ export default function Companies() {
       >
         Our Partners
       </h1>
-      <div className="flex m-auto w-[25%] pl-20 pr-20">
+      <div className="flex m-auto lg:w-[25%] md:w-80 pl-20 pr-20">
         {companies?.map((company, index) => (
           <Image
             key={index}
