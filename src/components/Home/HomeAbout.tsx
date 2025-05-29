@@ -5,7 +5,7 @@ export default function HomeAbout() {
     <>
       <div>
         <h1 data-aos="fade-up" data-aos-duration="500" className="text-5xl text-center font-semibold text-[#438D98]  mt-40 mb-20">
-          WHO we are | About
+          Who we are
         </h1>
         <p data-aos="fade-up" data-aos-duration="500" className="pr-16 pl-16 text-center text-xl">
           <strong>Intimec</strong> specializes in <strong>Identity and Access Management (IAM)</strong>,

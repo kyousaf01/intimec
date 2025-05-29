@@ -59,7 +59,7 @@ export default function HomeOffers() {
         <h1
           data-aos="fade-down-left"
           data-aos-duration="500"
-          className="text-[70px]  lg:w-1/2 font-semibold text-[#438D98]  mt-40 mb-2"
+          className="text-[70px]  lg:w-1/2 font-semibold text-[#438D98]  mb-2"
         >
           Our
         </h1>
@@ -77,7 +77,7 @@ export default function HomeOffers() {
         >
           {offers[index].name}
         </h1>
-        <button className="bg-[#438D98] mt-8 text-white w-fit p-2 cursor-pointer hover:opacity-80 rounded-xl mt-4">
+        <button className="bg-[#438D98]  text-white w-fit p-2 cursor-pointer hover:opacity-80 rounded-xl mt-4">
           Contact Us
         </button>
       </div>
@@ -89,7 +89,7 @@ export default function HomeOffers() {
               index === offers.length - 1 ? "lg:col-start-2" : ""
             }`}
           >
-            <div className="h-full flex flex-col justify-between p-8 rounded-3xl">
+            <div className="h-full flex flex-col justify-between pl-8 pr-8 pb-8 rounded-3xl">
               <div>
                 <h3 className="text-md font-bold text-[#438D98]">
                   {offer.name}

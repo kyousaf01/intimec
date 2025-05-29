@@ -55,12 +55,12 @@ export default function IgaComponent() {
         </p>
       </div>
 
-      <h1 className="text-3xl text-[#438D98] mt-12 font-semibold text-center">
+      <h1 className="text-3xl text-[#438D98] ml-18 2xl:ml-16 mt-12 font-semibold flex items-center justify-center lg:w-[60%]" >
         Key Challenges Addressed
       </h1>
 
-      <div className="text-xl mt-8 flex items-center justify-center">
-        <ul className="list-disc text-left pl-6 lg:w-[60%] max-md:p-8">
+      <div className="text-xl mt-8 flex items-center justify-center ">
+        <ul className="list-disc text-left pl-6 lg:w-[60%]">
           <li>Access creep and entitlement sprawl</li>
           <li>Orphaned or duplicate accounts after role or HR changes</li>
           <li>Heavy, spreadsheet‑driven access certification cycles</li>

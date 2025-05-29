@@ -22,7 +22,7 @@ export default function Companies() {
             width={80}
             height={80}
             priority
-            className="w-full bg-sky-50 rounded-3xl"
+            className="w-full "
           />
         ))}
       </div>
