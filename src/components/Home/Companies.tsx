@@ -13,14 +13,14 @@ export default function Companies() {
       >
         Our Partners
       </h1>
-      <div className="flex m-auto lg:w-[25%] md:w-80 pl-20 pr-20">
+      <div className="flex m-auto lg:w-[35%] md:w-80 pl-20 pr-20">
         {companies?.map((company, index) => (
           <Image
             key={index}
             src={company.imgSrc}
             alt={`Company logo ${index}`}
-            width={80}
-            height={80}
+            width={140}
+            height={140}
             priority
             className="w-full "
           />

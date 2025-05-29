@@ -21,19 +21,3 @@ body {
 }
 
 
-.heading-blend {
-  color: black;
-  position: relative;
-}
-
-.heading-blend::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  color: white;
-  overflow: hidden;
-  height: 300px; /* height of the image */
-  z-index: 1;
-}

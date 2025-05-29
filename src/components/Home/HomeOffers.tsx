@@ -6,38 +6,38 @@ export default function HomeOffers() {
     {
       name: "Identity Governance Administration (IGA)",
       description: `Identity governance is crucial for managing user access rights and ensuring security. We provide expert advisory services to design and implement effective identity governance frameworks.`,
-      href : "/iga"
+      href: "/iga",
     },
     {
       name: "Access Management (AM)",
       description: `AM ensures that users, applications, and devices have the right access at the right time, maintaining security and user experience. Our AM services help organizations implement robust authentication and authorization mechanisms.`,
-      href :"/"
+      href: "/",
     },
     {
       name: "Privileged Access Management (PAM)",
       description: `Privileged accounts pose significant security risks if not managed properly. Our PAM advisory services help protect critical assets by implementing robust privileged access controls.`,
-    href :"/"
+      href: "/",
     },
     {
       name: "IAM Strategy & Roadmap Development",
       description: `A well-defined IAM strategy is crucial for organizations seeking to strengthen security, enhance operational efficiency, and meet compliance mandates. Our approach ensures a structured transformation of your IAM landscape with a focus on long-term sustainability.`,
-    href :"/"
+      href: "/",
     },
     {
       name: "Regulatory Compliance Advisory",
       description: `Ensuring regulatory compliance is a top priority for organizations across industries. Our advisory services help organizations achieve and maintain compliance with relevant regulations and industry standards.`,
-    href :"/"
+      href: "/",
     },
     {
       name: "IAM Technology Evaluation",
       description: `Selecting the right IAM solution is crucial for successful implementation. We provide depth evaluations of leading IAM solutions to help organizations make informed decisions.`,
-    href :"/"
+      href: "/",
     },
 
     {
       name: "Cloud IAM Strategy",
       description: `As organizations migrate to the cloud, managing identities and access in cloud environments becomes critical. We offer strategic guidance to optimize cloud identity management.`,
-    href :"/"
+      href: "/",
     },
   ];
 
@@ -73,7 +73,7 @@ export default function HomeOffers() {
 
         <h1
           key={flipKey}
-          className="text-[45px] lg:w-[400px] font-semibold text-[#438D98] flip-up"
+          className="text-[45px] lg:w-[400px] font-semibold text-[#bdbdbd] flip-up"
         >
           {offers[index].name}
         </h1>
@@ -99,9 +99,7 @@ export default function HomeOffers() {
                 </p>
               </div>
               <button className="bg-[#438D98] text-white w-fit p-2 cursor-pointer hover:opacity-80 rounded-xl mt-4">
-                <Link href={offer.href}>
-                Learn more
-                </Link>
+                <Link href={offer.href}>Learn more</Link>
               </button>
             </div>
           </div>

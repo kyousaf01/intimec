@@ -19,15 +19,31 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const products = [
   {
-    name: "IGA",
+    name: "Identity Governance Administration (IGA)",
+    href: "/iga",
+  },
+  {
+    name: "Access Management (AM)",
     href: "#",
   },
   {
-    name: "AM",
+    name: "Privileged Access Management (PAM)",
     href: "#",
   },
   {
-    name: "PAM",
+    name: "IAM Strategy & Roadmap Development",
+    href: "#",
+  },
+  {
+    name: "Regulatory Compliance Advisory",
+    href: "#",
+  },
+  {
+    name: "IAM Technology Evaluation",
+    href: "#",
+  },
+  {
+    name: "Cloud IAM Strategy",
     href: "#",
   },
 ];
@@ -90,13 +106,15 @@ export default function Example() {
 
               <PopoverPanel
                 transition
-                className="absolute top-full right-0 z-10 mt-3 w-fit max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                className="absolute top-full lg:-ml-[900%] max-xl:-ml-[1000%] 2xl:-ml-[1237%] z-10 mt-3 w-screen bg-white shadow-lg ring-1 ring-gray-900/5 transition 
+             data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out 
+             data-leave:duration-150 data-leave:ease-in"
               >
-                <div className="p-4">
+                <div className="p-4 max-w-screen-xl mx-auto">
                   {products.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                      className="group relative flex hover:underline text-center w-full items-center gap-x-6 rounded-lg p-4 text-sm/6 "
                     >
                       <div className="flex-auto">
                         <a
@@ -126,13 +144,15 @@ export default function Example() {
 
               <PopoverPanel
                 transition
-                className="absolute top-full right-0 z-10 mt-3 w-fit max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                className="absolute top-full lg:-ml-[990px] max-xl:-ml-[850%] 2xl:-ml-[1050%] z-10 mt-3 w-screen bg-white shadow-lg ring-1 ring-gray-900/5 transition 
+             data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out 
+             data-leave:duration-150 data-leave:ease-in"
               >
-                <div className="p-4">
-                  {getInTouch.map((item) => (
+                <div className="p-4 max-w-screen-xl mx-auto">
+                  {getInTouch?.map((item) => (
                     <div
                       key={item.name}
-                      className="group whitespace-pre relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                      className="group relative flex hover:underline text-center w-full items-center gap-x-6 rounded-lg p-4 text-sm/6 "
                     >
                       <div className="flex-auto">
                         <a
@@ -161,18 +181,20 @@ export default function Example() {
 
               <PopoverPanel
                 transition
-                className="absolute top-full right-0 z-10 mt-3 w-fit max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                className="absolute top-full lg:-ml-[1140px] max-xl:-ml-[1070%] 2xl:-ml-[1950%] z-10 mt-3 w-screen bg-white shadow-lg ring-1 ring-gray-900/5 transition 
+             data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out 
+             data-leave:duration-150 data-leave:ease-in"
               >
-                <div className="p-4">
+                <div className="p-4 max-w-screen-xl mx-auto">
                   {About.map((item) => (
                     <div
                       key={item.name}
-                      className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                      className="group relative flex hover:underline text-center w-full items-center gap-x-6 rounded-lg p-4 text-sm/6 "
                     >
                       <div className="flex-auto">
                         <a
                           href={item.href}
-                          className="block font-[100] whitespace-pre text-xl text-gray-900"
+                          className="block font-[100] text-xl text-gray-900"
                         >
                           {item.name}
                           <span className="absolute inset-0" />

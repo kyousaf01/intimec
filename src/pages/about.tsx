@@ -1,5 +1,4 @@
 import AboutComponent from "@/components/About/AboutComponent";
-import Team from "@/components/About/Team";
 import Footer from "@/components/Shared/Footer";
 import Head from "next/head";
 import  ContactComponent  from '@/components/Contact/ContactComponent';
@@ -15,7 +14,6 @@ export default function about() {
       <div>
         <Header />
         <AboutComponent/>
-        <Team/>
         <ContactComponent/>
       </div>
       <Footer />    

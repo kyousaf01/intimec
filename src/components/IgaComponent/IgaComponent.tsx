@@ -15,11 +15,11 @@ export default function IgaComponent() {
     },
     {
       title: "Why Choose Us",
-      content: [
-        "Vendor‑agnostic architects with 100+ successful IGA rollouts",
-        "Proprietary SoD rule libraries tailored to 12+ industries",
-        "Accelerated deployment blueprints that cut time‑to‑value by 40 %",
-      ],
+      content: `
+- Vendor‑agnostic architects with 100+ successful IGA rollouts
+- Proprietary SoD rule libraries tailored to 12+ industries
+- Accelerated deployment blueprints that cut time‑to‑value by 40 %
+`,
     },
   ];
 
@@ -35,17 +35,17 @@ export default function IgaComponent() {
         />
       </div>
       <h1
-        className="text-5xl text-[#438D98] -mt-24 font-bold text-center max-sm:text-3xl"
+        className="text-5xl text-[#438D98] -mt-32 font-bold text-center max-sm:text-3xl"
         data-aos="fade-up"
         data-aos-duration="500"
       >
         Identity Governance Administration <br /> (IGA)
       </h1>
 
-      <h1 className="text-3xl text-[#438D98] mt-12 font-semibold text-center">
+      <h1 className="text-3xl text-[#438D98] mt-12 2xl:-ml-18 xl:-ml-2 font-semibold lg:w-[60%] flex items-center justify-center">
         Service Overview
       </h1>
-      <div className="text-xl text-center max-md:p-8 mt-8 flex items-center justify-center">
+      <div className="text-xl max-md:p-8 mt-8 flex items-center justify-center">
         <p className="lg:w-[60%]">
           Identity Governance Administration puts disciplined controls around
           who can access what, when, and why. We design policy‑driven processes
@@ -55,7 +55,7 @@ export default function IgaComponent() {
         </p>
       </div>
 
-      <h1 className="text-3xl text-[#438D98] ml-18 2xl:ml-16 mt-12 font-semibold flex items-center justify-center lg:w-[60%]" >
+      <h1 className="text-3xl text-[#438D98] lg:ml-14 2xl:ml-0 mt-12 font-semibold lg:w-[60%] flex items-center justify-center">
         Key Challenges Addressed
       </h1>
 
@@ -75,22 +75,24 @@ export default function IgaComponent() {
         {cards.map((card, index) => (
           <div
             key={index}
-            className="bg-sky-50 p-6 rounded-2xl hover:shadow-xs"
+            className="bg-sky-50 p-6 rounded-2xl lg:w-[85%] hover:shadow-xs"
             data-aos="fade-up"
           >
             <h2 className="text-2xl font-semibold text-[#438D98] text-center mb-4">
               {card.title}
             </h2>
-            {Array.isArray(card.content) ? (
-              <ul className="list-disc pl-5 text-left space-y-2">
-                {card.content.map((point, i) => (
-                  <li key={i}>{point}</li>
-                ))}
+
+            {card.content.includes("\n") ? (
+              <ul className="list-disc pl-5 text-left space-y-2 text-gray-700">
+                {card.content
+                  .split("\n")
+                  .filter((line) => line.trim() !== "")
+                  .map((line, i) => (
+                    <li key={i}>{line.replace(/^[-•]\s*/, "")}</li>
+                  ))}
               </ul>
             ) : (
-              <p className="text-base text-center text-gray-700">
-                {card.content}
-              </p>
+              <p className="text-center text-gray-700">{card.content}</p>
             )}
           </div>
         ))}
