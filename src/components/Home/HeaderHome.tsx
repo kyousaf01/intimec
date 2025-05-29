@@ -26,7 +26,7 @@ const products = [
     name: "AM",
     href: "#",
   },
-    {
+  {
     name: "PAM",
     href: "#",
   },
@@ -63,17 +63,19 @@ export default function Example() {
         aria-label="Global"
         className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8"
       >
-        <div className="flex lg:flex-1">
-          <Link href="/" className="-m-1.5 p-1.5">
-            <Image
-              src="/images/logo.png"
-              alt="Intimec team working on technology solutions"
-              width={150}
-              height={150}
-              priority
-            />
-          </Link>
-        </div>
+        {!mobileMenuOpen && (
+          <div className="flex lg:flex-1">
+            <Link href="/" className="-m-1.5 p-1.5">
+              <Image
+                src="/images/logo.png"
+                alt="Intimec team working on technology solutions"
+                width={150}
+                height={150}
+                priority
+              />
+            </Link>
+          </div>
+        )}
 
         <div className="flex mx-8 space-x-6">
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
@@ -184,14 +186,16 @@ export default function Example() {
           </PopoverGroup>
         </div>
         <div className="flex lg:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="size-6" />
-          </button>
+          {!mobileMenuOpen && (
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            >
+              <span className="sr-only">Open main menu</span>
+              <Bars3Icon aria-hidden="true" className="size-6" />
+            </button>
+          )}
         </div>
       </nav>
       <Dialog
